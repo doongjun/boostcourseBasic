@@ -1,4 +1,0 @@
-INDEX VERSION 1.4+C:\Users\skrdu\boostcourse\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2393031749.index
-2429825309.index
-2357782171.index
