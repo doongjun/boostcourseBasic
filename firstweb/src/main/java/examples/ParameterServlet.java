@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class HelloServlet
+ * Servlet implementation class ParameterServlet
  */
-@WebServlet("/HelloServlet")
-public class HelloServlet extends HttpServlet {
+@WebServlet("/param")
+public class ParameterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public HelloServlet() {
+    public ParameterServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,11 +28,20 @@ public class HelloServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//응답 형식
-		response.setContentType("text/html;charset=UTF-8");
-		//클라이언트와 연결통로
+		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		out.print("<h1>Hello Servlet</h1>");
+		out.println("<html>");
+		out.println("<head><title>form</title></head>");
+		out.println("<body>");
+		
+		String name = request.getParameter("name");
+		String age = request.getParameter("age");
+		
+		out.println("name:"+name+"<br>");
+		out.println("age:"+age+"<br>");
+		
+		out.println("</body>");
+		out.println("</html>");
 	}
 
 }
