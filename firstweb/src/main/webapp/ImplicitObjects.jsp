@@ -11,7 +11,8 @@
 	StringBuffer url = request.getRequestURL();
 	out.print("url : " + url.toString());
 	out.print("<br>");
-	
 %>
+
+
 </body>
 </html>

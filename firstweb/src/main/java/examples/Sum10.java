@@ -9,20 +9,31 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/HelloServlet")
-public class HelloServlet extends HttpServlet {
+@WebServlet("/sum")
+public class Sum10 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public HelloServlet() {
+    public Sum10() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//응답 형식
 		response.setContentType("text/html;charset=UTF-8");
-		//클라이언트와 연결통로
 		PrintWriter out = response.getWriter();
-		out.print("<h1>Hello Servlet</h1>");
+		
+		int total = 0;
+		for(int i=1; i<=10; i++) {
+			total += i;
+		}
+		
+		out.println("<html>");
+		out.println("<head><title>sum10</title></head>");
+		out.println("<body>");
+		out.println("1부터 10까지 합 : ");
+		out.println(total);
+		out.println("</body>");
+		out.println("</html>");
 	}
 
 }
