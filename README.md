@@ -18,6 +18,9 @@
 #### 5) scope (page, request, session, application)
 #### 6) JSTL & EL
 💻 프로젝트B. 방명록 만들기
+####
+####
+
 ------------
 #### 🤔생각해보기 정리 
 #### 👉[클릭](https://doongjun.tistory.com/category/Record/boostcourse)
