@@ -8,7 +8,7 @@
 #### 3) 개발환경
 #### 4) Maven
 #### 5) JDBC
-💻 프로젝트A. 명함 관리 프로그램  
+💻 [프로젝트A. 명함 관리 프로그램](https://doongjun.tistory.com/64)  
 
 ### 2. 웹 백엔드 프로그래밍 기초
 #### 1) Web 개발의 이해 (HTTP, browser, WAS)
