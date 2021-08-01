@@ -17,7 +17,7 @@
 #### 4) JSP (LifeCycle, 문법, 내장객체)
 #### 5) scope (page, request, session, application)
 #### 6) JSTL & EL
-💻 프로젝트B. 방명록 만들기
+💻 [프로젝트B. 방명록 만들기](https://doongjun.tistory.com/66)
 ####
 ####
 
